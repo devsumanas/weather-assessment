@@ -18,7 +18,6 @@ class WeatherController extends Controller
         $cities = City::with(['weatherLogs' => function ($q) {
             $q->latest('fetched_at')->limit(1);
         }])->get();
-
         return view('weather.index', compact('cities'));
     }
 
@@ -27,7 +26,8 @@ class WeatherController extends Controller
      */
     public function fetch(Request $request)
     {
-        FetchWeatherData::dispatchSync();
+        $weather = FetchWeatherData::dispatchSync();
+        // WeatherLog::create($weather);
         return redirect()->route('weather.index')
             ->with('status', 'Weather fetch job dispatched successfully!');
     }

@@ -127,6 +127,12 @@ return [
             'path' => storage_path('logs/laravel.log'),
         ],
 
+        'weather' => [
+            'driver' => 'daily',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'path' => storage_path('logs/weather.log'),
+        ],
+
     ],
 
 ];

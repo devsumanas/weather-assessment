@@ -22,8 +22,10 @@ class SendWeatherNotification implements ShouldQueue
         $change = $new > $old ? '📈 Temperature Rise' : '📉 Temperature Drop';
 
         $message = "[WeatherAlert] {$change} detected in {$city} | Old: {$old}°C | New: {$new}°C";
-
+        \Log::info("Called");
         // Log to laravel.log
-        Log::info($message);
+        Log::channel('weather')->info("Tempearatue changed for {$city}. Old: {old} New: {new}");
+        // Log::info($message);
+
     }
 }
