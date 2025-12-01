@@ -3,6 +3,7 @@
 ### Task 1: Integrate Weather API with Error Handling
 
 - Call OpenWeatherMap API on `app/Services/CityWeatherService.php`
+- A valid API key is available in the .env file.You must add it to the Laravel config
 
 Example endpoint:
 ```
@@ -17,10 +18,6 @@ main.humidity	    humidity
 wind.speed	    windSpeed
 weather[0].description description
 ```
-
-### Task 2: API Key Security Issue
-A valid API key is available in the .env file.
-You must add it to the Laravel config for secure & consistent access.
 
 ### Task 3: Event Listener
 
