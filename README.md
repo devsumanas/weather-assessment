@@ -19,13 +19,11 @@ wind.speed	    windSpeed
 weather[0].description description
 ```
 
+### Task 2: Display latest weather data in the view
+
+Show the latest weather data for all cities in index route "/"
+
 ### Task 3: Event Listener
 
 If the previous weather log temperature is greater than 3°C, trigger an Event Listener
 - Listener should write the entry into a custom log file
-
-### Task 4: City Management
-- Complete the partially implemented CityController
-- Add **Create & Delete** method
-- Add unique validation for city names
-- Implement soft deletes for cities

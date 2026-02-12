@@ -18,6 +18,8 @@ class WeatherLog extends Model
         'fetched_at'
     ];
 
+    // Task 3: Event Listener on booted()
+
     public function city()
     {
         return $this->belongsTo(City::class);

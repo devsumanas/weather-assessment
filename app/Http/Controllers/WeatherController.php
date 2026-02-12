@@ -14,11 +14,7 @@ class WeatherController extends Controller
      */
     public function index()
     {
-        // Fetch all cities with their latest weather log
-        $cities = City::with(['weatherLogs' => function ($q) {
-            $q->latest('fetched_at')->limit(1);
-        }])->get();
-
+        // Task 2: Fetch all cities with their latest weather log
         return view('weather.index', compact('cities'));
     }
 
