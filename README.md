@@ -1,6 +1,11 @@
 ## Laravel Weather App Assessment 
 
-### Task 1: Integrate Weather API with Error Handling
+### Task 1: Display latest weather data in the view
+
+Show the latest weather data for all cities in index route "/"
+
+
+### Task 2: Integrate Weather API with Error Handling
 
 - Call OpenWeatherMap API on `app/Services/CityWeatherService.php`
 - A valid API key is available in the .env file.You must add it to the Laravel config
@@ -18,10 +23,6 @@ main.humidity	    humidity
 wind.speed	    windSpeed
 weather[0].description description
 ```
-
-### Task 2: Display latest weather data in the view
-
-Show the latest weather data for all cities in index route "/"
 
 ### Task 3: Event Listener
 

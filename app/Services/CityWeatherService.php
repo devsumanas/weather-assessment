@@ -11,7 +11,7 @@ class CityWeatherService
     public function fetchAndSave(City $city): ?WeatherLog
     {
         try {
-            // Task 1: Integrate Weather API with Error Handling
+            // Task 2: Integrate Weather API with Error Handling
 
         } catch (\Throwable $e) {
             Log::error("Weather fetch failed for city {$city->name}: " . $e->getMessage());

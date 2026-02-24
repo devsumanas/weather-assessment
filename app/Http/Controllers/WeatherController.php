@@ -14,8 +14,8 @@ class WeatherController extends Controller
      */
     public function index()
     {
-        // Task 2: Fetch all cities with their latest weather log
-        return view('weather.index', compact('cities'));
+        // Task 1: Fetch all cities with their latest weather log
+        return view('weather.index');
     }
 
     /**
